@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/profile-pic.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Amal Sonu</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Amal Sonu</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="profile-pic.png" alt="Amal Sonu profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Amal Sonu</h1>
+      <p class="section__text__p2">Web Designer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <img src="github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="experience.png" alt="Experience icon" class="icon" />
+            <h3>Works Done</h3>
+            <p> 3+ Projects in <br />Web Designing</p>
+          </div>
+          <div class="details-container">
+            <img src="education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Basics Of Web designing <br>
+              BCA AI & DATA SCIENCE
+            </p>
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I have developed a solid foundation in HTML, CSS, and JavaScript, and I’m continuously expanding my
+            knowledge in various web development frameworks. My projects range from building responsive websites to
+            developing interactive web applications, showcasing my ability to adapt and learn quickly. <br>
+            I thrive on challenges and am always eager to take on new projects that push my skills to the next level. My
+            goal is to create seamless and user-friendly web experiences that not only meet but exceed expectations.
+            When I’m not coding, I enjoy staying updated with the latest tech trends, contributing to open-source
+            projects, and exploring new hobbies. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>BOOTSTRAP</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GIT</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <div class="courses">
+              <h4>
+                <img src="checkmark.png" alt="Experience icon" height="20px;">
+                COURSES COMPLETED
+              </h4>
+              <a href="https://www.youtube.com/watch?v=pDmEYRhyusU&list=PLY-ecO2csVHeKaBI7lAM1jbIPU8K6fUxY&pp=iAQB"><i
+                  class='bx bx-laptop'></i> TUTORIAL : BASICS OF PROGRAMMING SKILLS PLATFORM : BROTOTYPE</a><br>
+              <a href="https://www.youtube.com/watch?v=2TfED5L4c3M&list=PLY-ecO2csVHfRMEmW_ltccnJcMtSGUKSk&pp=iAQB"><i
+                  class='bx bx-laptop'></i> TUTORIAL : BASICS OF WEB DESIGNING PLATFORM : BROTOTYPE</a><br>
+              <a href="https://www.youtube.com/watch?v=-wGc24R3_eM&list=PLY-ecO2csVHdLhAO6TERaMJXP8aqyWVt-&pp=iAQB"><i
+                  class='bx bx-laptop'></i> TUTORIAL : GIT VERSION CONTROL PLATFORM : BROTOTYPE</a><br>
+              <a href="https://www.w3schools.com/tutorials/"><i class='bx bx-laptop'></i> TUTORIAL : WEB DESIGNING
+                PLATFORM : W3SCHOOLS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Personal Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Fretime Org</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src=".arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <p class="section__text__p1">Say Hello To Me. </p>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <p><a href="mailto:amalsonuoff@gmail.com"><i class='bx bx-mail-send' style="font-size: larger;"></i>
+            amalsonuoff@gmail.com</a> <br></p>
+      </div>
+      <div class="contact-info-container">
+        <p><a href="https://www.linkedin.com/in/amal-sonu-09298a320/"><i class='bx bxl-linkedin-square'
+              style="font-size: larger;"></i> LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="social-media">
+      <a href="tel:8921746693"> <i class='bx bxs-phone'></i></a> <!--phone-->
+      <a href="mailto:amalsonuoff@gmail.com"> <i class='bx bxl-gmail'></i> </a> <!--Mail-->
+      <a href="https://www.threads.net/@its_mr._amal._"> <i class='bx bxl-twitter'></i> </a> <!--Twitter-->
+      <a href="https://www.instagram.com/its_mr._amal._"> <i class='bx bxl-instagram'></i> </a> <!--Instagram-->
+      <a href="https://www.linkedin.com/in/amal-sonu-09298a320/"><i class='bx bxl-linkedin'></i>
+      </a><!--LinkedIn-->
+      <a href="https://github.com/AmalSonu2874"><i class='bx bxl-github'></i> </a> <!--Git Hub-->
+    </div>
+    <p>Copyright &#169; 2024 Amal Sonu. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
